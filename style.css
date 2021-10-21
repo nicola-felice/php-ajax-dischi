@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+/* common */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #1E2D3B;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+.container_medium {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* header */
+header {
+  padding: .75rem 1rem;
+  background-color: #2E3A46;
+
+  display: flex;
+  align-items: center;
+}
+
+header img {
+  width: 3.5rem;
+}
+
+/* albums section */
+#albums_container {
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  list-style: none;
+  padding: 4rem 0;
+}
+.album {
+  width: calc(20% - 1rem);
+}
+@media screen and (max-width: 870px) {
+  .album {
+    width: calc(25% - 1rem);
+  }
+} 
+@media screen and (max-width: 600px) {
+  .album {
+    width: calc((100% / 3) - 1rem);
+  }
+}
+@media screen and (max-width: 500px) {
+  .album {
+    width: calc((100% / 2) - 1rem);
+  }
+}
+
+
+/* album cover component */
+.album {
+  background-color: #2E3A46;
+  text-align: center;
+  padding: 1rem;
+  margin: .5rem;
+}
+.album a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.album img {
+  margin-bottom: 1rem;
+}
+
+.album .title_album {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 1.1rem;
+  margin-bottom: .75rem;
+}
+
+.album .year_album,
+.album .author_album {
+  color: #808080;
+  text-transform: capitalize;
+  font-size: .85rem;
+  font-weight: 500;
+}
+.album .year_album {
+  margin-bottom: .25rem;
+  margin-top: .15rem;
+}
+
