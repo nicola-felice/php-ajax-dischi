@@ -11,8 +11,12 @@
   <div id="app">
     <header>
       <img src="img/spotify-logo.png" alt="logo spotify">
+      <select v-model="genreSelected">
+        <option value="">All</option>
+        <option v-for="(elm, id) in genresList" :key="id" :value="elm">{{elm}}</option>
+      </select>
     </header>
-    
+
     <main>
       <div class="container_medium">
         <section>
